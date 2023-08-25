@@ -139,6 +139,7 @@ nav a{
 .old-prize{
     font-weight: bold;
     font-size: 25px;
+    text-decoration: line-through;
 }
 
 .new-prize{
