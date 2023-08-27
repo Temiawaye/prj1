@@ -50,6 +50,15 @@ header{
 
 .bg > li{
     display: inline;
+    /* transition: color 0.5s ease-out;
+    color: #0000ff; */
+}
+
+
+
+a:hover{
+    font-size: 28px;
+    /* color: red; */
 }
 
 nav a{
@@ -60,6 +69,7 @@ nav a{
     padding: 0 20px;
     font-weight: bold;
     font-size: 20px;
+    transition:  0.5s ease-out;
 }
 
 #st1{
@@ -120,11 +130,22 @@ nav a{
     /* margin-left: 50px; */
     margin-top: 40px;
     /* margin-bottom: 20px; */
+    /* transition: all 0.5s ease-out; */
+    /* animation-name: example;
+    animation-duration: 2s; */
 }
 
-.ms img{
-    width: auto;
-}
+
+/* .ms :hover{
+    width: 350px;
+    height: 420px;
+    animation-name: example;
+    animation-duration: 2s;
+} */
+
+/* .ms img{
+    width: 100%;
+} */
 
 .ms h3{
     font-weight: bold;
@@ -151,10 +172,11 @@ nav a{
 
 #fb{
     position: fixed;
-    top: 350px;
-    background: #333;
+    bottom: 80px;
+    /* top: 150px; */
+    /* background: #333; */
     /* color: white; */
-    padding: 5px 10px;
+    /* padding: 5px 10px; */
     border: none;
     border-radius: none;
     outline: none;
@@ -163,8 +185,18 @@ nav a{
     /* color: white; */
 }
 
-#fb p{
+#fb :hover{
+    font-size: 55px;
+    transition:  0.5s ease-out;
+}
+
+/* #fb p{
     color: white;
+} */
+
+#fb i{
+    font-size: 45px;
+    color: green;
 }
 
 #mf{
@@ -174,4 +206,117 @@ nav a{
     padding: 20px;
     margin-top: 60px;
     font-size: 25px;
+}
+
+/* @keyframes example{
+    to{
+        width: 400px;
+        height: 470px;
+    }
+    from{
+        width: 380px;
+        height: 450px;
+    }
+} */
+
+@media screen and (max-width: 900px) {
+    header{
+        height: 60px;
+        display: block;
+        margin-bottom: 75px;
+    } 
+
+    #tl >img{
+        width: 200px;
+        height: 70px;
+    }
+
+    .bg{
+        margin-top: 10px;
+    }
+
+    #st1{
+        background-position: center;
+        /* background-size: 800px 400px; */
+        background-size: cover;
+        padding: 180px 50px 250px 50px;
+        height: 300px;
+        /* margin-bottom: 0px; */
+    }
+
+    #st1 h1{
+        margin-bottom: 10px;
+    }
+
+    .sh1{
+        height: 60px;
+        margin-top: 0px;
+    }
+
+    .ms{
+        width: 280px;
+        /* margin-left: 15px; */
+        /* margin-right: 15px; */
+        padding: 15px;
+    }
+
+    .ms img{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    header{
+        height: 15px;
+        display: block;
+    } 
+
+    #tl >img{
+        width: 140px;
+        height: 48px;
+        margin-bottom: 0px;
+    }
+
+    nav a{
+        padding: 5px;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    #st1{
+        /* background-size: 480px; */
+        background-size: cover;
+        padding-top: 5%;
+        /* margin: ; */
+        /* background-color: red; */
+        /* height: 50px; */
+    }
+
+    #st1 h1{
+        font-size: 25px;
+        margin-top: 55px;
+    }
+    
+    #st1 p{
+        font-size: 14px;
+    }
+
+    .sh1{
+        background-size: contain;
+        height: 50px;
+        font-size: 19px;
+        padding-top: 10px;
+        margin-top: 8px;
+    }
+
+    .ms{
+        width: 140px;
+        /* margin-left: 15px; */
+        /* margin-right: 15px; */
+        padding: 15px;
+    }
+
+    .ms img{
+        width: 100%;
+    }
 }
