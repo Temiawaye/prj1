@@ -310,10 +310,14 @@ nav a{
     }
 
     .ms{
-        width: 140px;
+        width: 170px;
         /* margin-left: 15px; */
         /* margin-right: 15px; */
         padding: 15px;
+    }
+
+    #mms{
+        margin: 0px 25px;
     }
 
     .ms img{
